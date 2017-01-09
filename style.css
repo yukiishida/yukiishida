@@ -1,0 +1,666 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+input, textarea,{
+	margin: 0;
+	padding: 0;
+}
+ol, ul{
+    list-style:none;
+}
+table{
+    border-collapse: collapse; 
+    border-spacing:0;
+}
+caption, th{
+    text-align: left;
+}
+a:focus {
+	outline:none;
+}
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+
+/******************************* ここまでリセット */
+
+
+
+
+/* デフォルトセット ******************************/
+
+html,body {
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	font-family: Courier, "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+/****** ここまでデフォルトセット */
+
+/* ここからモバイル *************/
+
+
+.menu {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-size: 240%;
+	background-color: rgba(255, 163, 0, 0.5);
+}
+
+.menu li {
+	display: inline-block;
+	width: 10%;
+	margin-left: 25px;
+	margin-right: 10px;
+	line-height: 100px;
+}
+
+.menu__name {
+	font-size: 43px;
+	color: #fff;
+	text-align: center;
+	line-height: 0.8;
+}
+
+.menu__name a {
+	display: block;
+	padding: 10px 0 10px 0;
+}
+
+.menu__category {
+	font-size: 40px;
+	margin: 20px 0 0 27px;
+}
+
+.menu__links {
+	margin: 19px;
+}
+
+.menu__link {
+	display: inline-block;
+}
+
+.main a {
+	color: red;
+	text-decoration: none;
+}
+
+.main a:hover {
+	text-decoration: underline;
+}
+
+.main img {
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.news2 {
+	margin: 0 auto 0 auto;
+    position: relative;
+}
+
+.news {
+	margin: 0 auto 0 auto;
+    position: static;
+    width: 50%;
+    padding: 70px;
+    text-align: center;
+}
+
+.detail {
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+	width: 100%;
+}
+.detail img {
+	width: 100%;
+	margin: 0px;
+	float: left;
+}
+
+
+.sub {
+	font-size: 60px;
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.sub:first-of-type {
+	margin: 20px;
+}
+
+.detail_zine {
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+	width: 100%;
+}
+
+.zine {
+	margin-bottom: 40px;
+	float: none;
+}
+
+
+h2 {
+	/* Bio用 */
+	font-size: 40px;
+}
+
+.bio {
+	margin: 30px 0;
+}
+
+.bio img {
+	float: none;
+}
+
+
+
+.bio__panel {
+	margin: 10%;
+}
+
+.bank {
+	display: none;
+}
+
+/* ナンバリング用 */
+.call {
+	font-size: 67px;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	position: fixed;
+}
+
+
+
+
+.bio a {
+	color: #005294;
+	font-family: Courier ,sans-serif;
+}
+
+/* ここからパーツ *********************************/
+
+/* 文字に関すること */
+
+.small {font-size: 90%;}
+.big {font-size: 120%}
+.bold {font-weight: bold;}
+.red {color: red;}
+.under-line {background: linear-gradient(transparent 60%, #3498db 60%);}
+
+/* レイアウト */
+.center {text-align: center;}
+/* .float-left {float: left;}
+.float-right {float: right;}
+.both{clear:both;}  いずれ消す */
+.mg10 {margin: 10px 0;}
+.mg20 {margin: 20px 0;}
+.mg30 {margin: 30px 0;}
+.mg40 {margin: 40px 0;}
+.mg50 {margin: 50px 0;}
+
+/******************************** ここまでパーツ */
+
+/****************************************************************** ここまでモバイル
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ここからパソコン ******************************************************************/
+
+@media all and (min-device-width: 800px) and (min-width: 800px) {
+
+.menu {
+	height: auto;
+	font-size: 14px;
+	font-family: Courier;
+	width: 160px;
+	margin: 40px 0px 0px 30px;
+	position: fixed;
+	position: absolute;
+	background-color: rgba(255, 163, 0, 0.5);
+}
+
+.menu__name {
+	font-size: 23px;
+}
+
+.menu__category {
+	font-size: 18px;
+	margin: 0 0 7px 5px;
+}
+
+
+
+.menu ol {
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+
+.menu li {
+	width: auto;
+	display: block;
+	margin-left: 5px;
+	margin-right: 10px;
+	line-height: 29px;
+	font-size: 17px;
+}
+
+
+h1 a:hover {
+	color: #FFF;
+	background-image: url(img/giphy_4.gif);
+	background-position: -10px -105px;
+}
+
+h2 {
+	/* Bio用 */
+	font-size: 30px;
+}
+
+.menu__links {
+	margin: 0px 0px 7px 10px;
+	padding-right: 10px;
+	line-height: 32px;
+}
+
+.menu__link {
+	font-size: 16.5px;
+	display: block;
+}
+
+.menu__link:hover {
+	background-image: url(img/giphy.gif);
+}
+
+.call {
+	margin-top: -20px;
+	margin-left: 30px;
+	width: 160px;
+}
+
+
+h3 a {
+	display: block;
+}
+
+h3 a:hover {
+	background-image: url(img/giphy.gif);
+}
+
+
+
+
+li {
+	list-style: none;
+}
+
+li a {
+	display: block;
+}
+
+li a:hover {
+	display: block;
+	background-image: url(img/giphy.gif);
+}
+
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+
+.main img {
+	width: auto;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+
+
+
+
+
+
+/* news */
+
+.news {
+	width: 450px;
+	margin: 40px 0px 0px 200px;
+	padding: 70px;
+	position: absolute;
+	/* background-color: rgba(255, 163, 0, 0.7);
+	background-color: rgba(255, 255, 255, 0.9); */
+	background-color: #FFF;
+	text-align: center;
+}
+
+.news a {
+
+}
+
+.news a:hover {
+	font-size: 110%;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	-ms-filter: "alpha(opacity=90)";
+}
+
+
+.news h2 {
+	font-size: 27px;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 9px;
+}
+
+.news h3 {
+	font-size: 17px;
+	text-align: center;
+}
+
+.zine_img {
+	display: block;
+
+}
+
+
+/**** 浮かせるボタン用 ****/
+
+.fin {
+	display: block;
+	position: relative;
+	top: 3px;
+	left: 2px;
+	z-index: 4;
+}
+
+
+/* 突発zine用 */ 
+.news2 {
+	width: 420px;
+	font-size: 18px;
+	margin: 40px 0px 0px 660px;
+	padding-top: 10px;
+	position: absolute;
+	background-color: rgba(255, 163, 0, 0.7);
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.news2 h2 {
+	font-size: 33px;
+	text-align: center;
+	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	/* text-indent: -9999px;
+	background-image: url(ppjp/img/logo.png); 
+	width: 476px;
+	height: 120px; */
+}
+
+.news2 h3 {
+	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 22px;
+	text-align: center;
+}
+
+.news2 p {
+	font-family: YuGothic, "游ゴシック", "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif, "STHeitiSC-Medium";
+	margin-top: 35px;
+	line-height: 2.3em;
+	margin-left: 10px;
+}
+
+
+/* しらこがえり */
+
+.shirako {
+	text-align: center; 
+	line-height: 1.3em;
+	margin-top: 20px;
+	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+
+
+/* button */
+
+.button {
+	display: inline-block;
+	width: 400px;
+	height: 54px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 54px;
+	outline: none;
+	margin: 10px 0px 8px 0px;
+}
+.button::before,
+.button::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+.button,
+.button::before,
+.button::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+/* ボタン詳細 */
+
+.button {
+	position: relative;
+	z-index: 2;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 50px;
+}
+.button:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+.button::before,
+.button::after {
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #f678d9;
+}
+.button::before {
+	right: 0;
+}
+.button::after {
+	left: 0;
+}
+.button:hover::before,
+.button:hover::after {
+	width: 0;
+	background-color: #59b1eb;
+}
+
+/*  deteal css  */
+
+.detail {
+	margin-right: 10px;
+	padding: 40px 0px 0px 190px;
+	display: inline-flex;
+	width: auto;
+}
+
+.detail img {
+	margin: 0px 0px 0px 10px;
+	float: left;
+}
+
+
+/* zine */
+.detail_zine {
+	width: auto;
+	padding: 40px 0px 0px 200px;
+	overflow: visible;
+	display: inline-flex;
+}
+
+.zine {
+	float: left;
+	margin-right: 96px;
+}
+
+.zineimg {
+	margin: 0;
+	border: 1px #000 solid;
+	height: 415px;
+}
+
+.subtext h3 {
+	font-size: 130%;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*  bio  */
+
+.bio {
+	display: block;
+	margin: 0 0 30px 10px;
+	width: 562px;
+
+}
+
+.bio img {
+	float: none;
+	margin: 0;
+}
+
+
+
+.bio__panel {
+	margin: 0;
+}
+
+
+.left-txt {
+	display: block;
+	text-align: left;
+}
+
+
+.bio p {
+	line-height: 170%;
+	margin-top: 30px;
+}
+
+.bio__box {
+	text-align: right;
+}
+
+.bio h3 {
+	font-size: 22px;
+	margin: 40px 0px 0px 0px;
+}
+
+.bank {
+	display: table;
+	border: 2px solid #000;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+/* txt */
+
+.txt {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.txt p {
+	line-height: 170%;
+}
+
+
+/* commission */
+
+
+.sub {
+	margin: -3px 0 0 47px;
+	font-size: 18px;
+	text-align: left;
+	display: flex;
+	width: 130px;
+}
+
+.sub:first-of-type {
+	margin: -3px 0 0 12px;
+	display: inline-block;
+}
+
+
+}
